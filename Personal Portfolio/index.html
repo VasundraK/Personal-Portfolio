@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Start your development with Meyawo landing page.">
+    <meta name="author" content="Devcrud">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css"> 
+    <link rel="stylesheet" href="assets/css/new.css">  
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+    <nav class="custom-navbar" data-spy="affix" data-offset-top="20">
+        <div class="container">
+            <ul class="nav">
+                <li class="item">
+                    <a class="link" href="#home">Home</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="#about">About</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="#education">Education</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="#Skills">Skills</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="#smarteye">Projects</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="#contact">Contact</a>
+                </li>
+            </ul>
+            <a href="javascript:void(0)" id="nav-toggle" class="hamburger hamburger--elastic">
+                <div class="hamburger-box">
+                    <div class="hamburger-inner"></div>
+                </div>
+            </a>
+        </div>
+    </nav>
+    <header id="home" class="header">
+        <div class="overlay"></div>
+        <div class="header-content container">
+            <h1 class="header-title">
+                <span class="up">HI!</span>
+                <span class="down">I'm Vasundra</span>
+            </h1>
+            <p class="header-subtitle">ASPIRING WEB DEVELOPER</p>
+        </div>
+    </header>
+    <section class="section pt-0" id="about"> 
+        <div class="container text-center">
+            <div class="about">
+                <div class="about-img-holder">
+                    <img src="assets/imgs/myself.jpg" class="modify-image" alt="My image" width="180px" height="180px">
+                </div>
+                <div class="about-caption">            
+                    <h2 class="section-title mb-3">About Me</h2>
+                    <p>
+                        As an IT enthusiast, my journey into the world of technology led me to develop a profound interest in web development. Driven by curiosity and a passion for learning, I embarked on the path of Full Stack development.
+With a keen focus on problem-solving, I have honed strong analytical skills that allow me to approach challenges methodically. As a hardworking and self-motivated individual, I am dedicated to continuous learning of the latest trends in the dynamic field of web development.
+Eager and excited to contribute to the growth of the community, I actively seek opportunities to collaborate with like-minded professionals and share knowledge. 
+                    </p>
+                    <button class="btn-rounded btn btn-outline-primary mt-4" onclick="downloadDocument()">View CV</button>
+                    <script>
+                        function downloadDocument() {          
+                            const documentUrl = 'assets/Resume.pdf'; 
+                            const link = document.createElement('a');
+                            link.href = documentUrl;
+                            link.download = 'Resume.pdf';
+                            document.body.appendChild(link);
+                            link.click();
+                            document.body.removeChild(link);
+                        }
+                    </script>
+                </div>
+            </div>
+        </div>
+    </section> 
+<section class="section" id="education">
+    <div class="container text-center">      
+        <h6 class="section-title mb-6">Education</h6>      
+        <div class="blog-card">        
+            <div class="blog-card-body">            
+                <img src="assets/imgs/college.png" alt="College icon" width="40px" height="40px"><h5 class="blog-card-title">B Tech in Information Technology</h6>
+                    <p><b>Coimbatore Institute of Technology, Civil Aerodrome Post, Coimbatore</b></p>
+                    <p>Expected Graduation: May 2025</p><br>
+                    <img src="assets/imgs/school.png" alt="School icon" width="40px" height="40px"><h5 class="blog-card-title">Higher Secondary Education</h6>
+                    <p><b>P.S.G.R Krishnammal Higher Secondary School for Girls, Peelamedu, Coimbatore</b></p>
+                    <p>Completion year: 2021</p>
+            </div>
+        </div>
+    </div>
+</section>
+    <section class="section" id="Skills">
+        <div class="container text-center">
+            <h6 class="section-title mb-6">Skills</h6>
+        </div>
+    <div class="container" id="nearby">
+            <fieldset>
+                <h6 class="section-title mb-6" style="font-size: 20px;">Programming Language</h6>
+                <ul>
+                    <li>Python-Excellent</li><br>
+                    <li>Java-Good</li><br>
+                    <li>C-Good</li>
+                </ul>             
+            </fieldset>
+            <fieldset>
+            <center><h6 class="section-title mb-6" style="font-size: 20px;">Web frameworks</h6></center>
+                <ul>
+                    <li>Django</li><br>
+                </ul>
+            </fieldset>
+            <fieldset>
+                <center><h6 class="section-title mb-6" style="font-size: 20px;">Soft Skills</h6></center>
+                <ul>
+                    <li>Adaptability</li><br>
+                    <li>Resilience</li><br>
+                    <li>Openness to Feedback</li><br>
+                </ul>
+            </fieldset>
+        </div>
+    </section> 
+    <section class="section" id="smarteye">   
+        <div class="container text-center">   
+            <h6 class="section-title mb-6" >Projects</h6>
+            <div class="blog-card">    
+                <div class="blog-card-body">
+                        <h5 class="blog-card-title">Smart Eye</h6>
+                        <p>The Smart Glass-Based Supermarket Navigation System is a groundbreaking solution focussed to empower visually impaired individuals during their supermarket visits. Recognizing the challenges faced by the visually impaired in navigating complex retail environments independently, our team developed a system that harnesses the power of technology to provide real-time assistance without the need for manual support.</p><br><br>
+                        <h5 class="blog-card-title">Car Rental website</h6>
+                        <p>Designed the frontend for a comprehensive Car Rental System, focusing on creating an intuitive and user-friendly interface for customers.Designed the frontend for User registration and authentication,Vehicle inventory display with detailed information,Booking and reservation system User and admin dashboards for efficient management. The designed frontend enhances the overall user experience, providing a visually appealing and functional interface for customers interacting with the Car Rental System.</p>
+                </div>
+            </div>
+    </section>
+<section class="section" id="contact">
+    
+        <div class="container text-center">
+            <p class="section-subtitle">How can you communicate?</p>
+            <h6 class="section-title mb-5">Contact Me</h6>
+            <p><img src="assets/imgs/phone.png" width="30px" height="30px"><a href="tel:+919361616530">+91 (9361) 616-530  </a>
+                <a href="https://www.linkedin.com/in/vasundra-k-716478265/">
+                    <img src="assets/imgs/linkedln.png" alt="Linkedln Icon" height="30px" width="30px">  Linkedln
+                </a>
+                <a href="mailto:vasundrak2004@gmail.com">
+                    <img src="assets/imgs/email.jpg" alt="Email Icon" height="40px" width="40px">Email
+                </a>
+            </p><br>
+        </div>
+    </section>
+   <script src="assets/vendors/jquery/jquery-3.4.1.js"></script> 
+    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+    <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
+    <script src="assets/js/port.js"></script>
+</body>
+</html>
